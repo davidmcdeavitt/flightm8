@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
-  def home
-    render :home
+  def home #Home page
+    render :home #Page with 'get started' & 'login' buttons
   end
 
   def show_login
@@ -9,14 +9,6 @@ class PagesController < ApplicationController
   end
 
   def login
-    redirect_to '/deals'
-  end
-
-  def show_signup
-    render :signup
-  end
-
-  def signup
     redirect_to '/deals'
   end
 
@@ -31,4 +23,5 @@ class PagesController < ApplicationController
   def add_to_favorites
     redirect_to '/deals'
   end
+
 end
