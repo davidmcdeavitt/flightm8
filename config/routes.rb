@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/users/:id/dashboard', to: 'users#dashboard' #Goes to the dashboard
   get '/api/mypreferreddeals', to: 'api/users#preferreddeals' #Returns the user's preferred deals in JSON
   get '/api/mysaveddeals', to: 'api/users#saveddeals' #Returns the user's saved deals in JSON
+  get '/api/alldeals', to: 'api/users#alldeals'
 
   get '/login', to: 'pages#show_login' #Get the login page
   post '/login', to: 'pages#login' #Create a new session and go to deal list

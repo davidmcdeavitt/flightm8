@@ -8,6 +8,8 @@ The user is required to enter information about their budget, availability for t
 
 Once a user has found a deal they are interested in, they can save it to their "saved deals" list, which they can access at any time via the "My Saved Deals" button on the user dashboard.
 
+The app also has a general API call available to provide all the deals in JSON format.
+
 * Ruby version
 For this project we used ruby version 2.4.1 for the backend base language
 Rails version 5.1.2 (ActiveRecord built in) was used as a framework
