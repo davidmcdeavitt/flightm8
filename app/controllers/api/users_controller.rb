@@ -91,4 +91,9 @@ class Api::UsersController < ApplicationController
     }
     jsonResult
   end
+
+  def alldeals
+    deals = Deal.all
+    render json: deals
+  end
 end
